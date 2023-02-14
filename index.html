@@ -1,0 +1,28 @@
+
+<html>
+<head>
+
+</head>
+<script>
+function oddishorevenish(){
+    var n=document.getElementById('num').value;
+var k=0;
+while(n>0){
+var k=k+n%10;
+n=Math.floor(n/10);
+}
+if((k%2)===0){
+  
+alert("evenish");
+}
+else{
+alert("odd");
+}
+}
+</script>
+<body>
+    <input type="number" id="num">
+    <input type="submit" onclick="oddishorevenish()">
+</body>
+
+</html>
